@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Guess My Number!</title>
-  </head>
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" /> <!-- Include an external CSS file -->
+  <title>Guess My Number!</title>
+</head>
+<body>
+  <header>
 
-      <!-- Modal content -->
-      <div id="settingsModal" class="modal-content">
-        <!-- Modal header -->
-        <div class="modal-header">
-          <span class="close">&times;</span> <!-- Close button (×) -->
-          <h2>Settings</h2>
-        </div>
-        <!-- Modal body (Settings content) -->
-        <div class="modal-body">
-          <p>
-            <label for="newMin">Minimum:</label>
-            <input id="newMin" type="number" min="0" class="changeSetting" placeholder="Enter a Min" />
-
-            <label for="newMax">Maximum:</label>
-            <input id="newMax" type="number" min="0" class="changeSetting" placeholder="Enter a Max" />
-
-            <label for="newScore">Score:</label>
-            <input id="newScore" type="number" min="1" class="changeSetting" placeholder="Enter a score" />
-            <p id="messageSetting" class="messageSetting"></p>
-            <button class="btn save">Save</button>
-          </p>
-        </div>
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <span class="close">&times;</span> <!-- Close button (×) -->
+        <h2>Settings</h2>
       </div>
-      
-      
-      <h1>Guess My Number!</h1>
-      <p id="between" class="between">(Between 0 and 20)</p>
-      <button class="setting">
-        <img src="setting.png" alt="Icon">
-      </button>
-      <button class="btn again">Again!</button>
-      <div class="number">?</div>
-    </header>
-    <main>
-      <section class="left">
-        <input type="number" class="guess" />
-        <button class="btn check">Check!</button>
-      </section>
-      <section class="right">
-        <p class="message">Start guessing...</p>
-        <p class="label-score">💯 Score: <span class="score">20</span></p>
-        <p class="label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
+      <!-- Modal Body (Settings Content) -->
+      <div class="modal-body">
+        <p>
+          <label for="newMin">Minimum:</label>
+          <input id="newMin" type="number" min="0" class="changeSetting" placeholder="Enter a Min" />
+
+          <label for="newMax">Maximum:</label>
+          <input id="newMax" type="number" min="0" class="changeSetting" placeholder="Enter a Max" />
+
+          <label for="newScore">Score:</label>
+          <input id="newScore" type="number" min="1" class="changeSetting" placeholder="Enter a score" />
+          <p id="messageSetting" class="messageSetting"></p>
+          <button class="btn save">Save</button>
         </p>
-      </section>
-    </main>
-    <div id="blurModal" class="overlay hidden"></div>
-    <script src="script.js"></script>
-  </body>
-  </html>
+      </div>
+    </div>
+
+    <h1>Guess My Number!</h1> <!-- Main title -->
+    <p id="between" class="between">(Between 0 and 20)</p> <!-- Range indicator -->
+    <button class="setting">
+      <img src="setting.png" alt="Icon"> <!-- Settings button with an icon -->
+    </button>
+    <button class="btn again">Again!</button> <!-- Button to restart the game -->
+    <div class="number">?</div> <!-- Display area for the guessed number -->
+  </header>
+
+  <main>
+    <!-- Left section for user input and check button -->
+    <section class="left">
+      <input type="number" class="guess" /> <!-- Input field for guessing -->
+      <button class="btn check">Check!</button> <!-- Button to check the guess -->
+    </section>
+    <!-- Right section for messages, score, and highscore -->
+    <section class="right">
+      <p class="message">Start guessing...</p> <!-- Game message display -->
+      <p class="label-score">💯 Score: <span class="score">20</span></p> <!-- Current score display -->
+      <p class="label-highscore">
+        🥇 Highscore: <span class="highscore">0</span> <!-- Highscore display -->
+      </p>
+    </section>
+  </main>
+
+  <div id="blurModal" class="overlay hidden"></div> <!-- Overlay for modal background -->
+  <script src="script.js"></script> <!-- Include an external JavaScript file -->
+</body>
+</html>
+
   

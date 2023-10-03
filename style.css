@@ -1,38 +1,45 @@
+/* Import the 'Press Start 2P' font from Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
+/* Reset some default styles and set the base font size */
 * {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
+/* Set the base font size and box-sizing for the whole document */
 html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
 
+/* Set the overall styling for the body */
 body {
-  font-family: 'Press Start 2P', sans-serif;
-  color: #eee;
-  background-color: #222;
-  /* background-color: #60b347; */
+  font-family: 'Press Start 2P', sans-serif; /* Use 'Press Start 2P' font */
+  color: #eee; /* Text color */
+  background-color: #222; /* Background color */
 }
 
 /* LAYOUT */
+
+/* Header styling */
 header {
   position: relative;
   height: 35vh;
-  border-bottom: 7px solid #eee;
+  border-bottom: 7px solid #eee; /* Border under the header */
 }
 
+/* Main content area styling */
 main {
   height: 65vh;
-  color: #eee;
+  color: #eee; /* Text color */
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
+/* Styling for the left section of the main content */
 .left {
   width: 52rem;
   display: flex;
@@ -40,12 +47,15 @@ main {
   align-items: center;
 }
 
+/* Styling for the right section of the main content */
 .right {
   width: 52rem;
-  font-size: 2rem;
+  font-size: 2rem; /* Font size */
 }
 
 /* ELEMENTS STYLE */
+
+/* Styling for the main title */
 h1 {
   font-size: 4rem;
   text-align: center;
@@ -56,10 +66,11 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+/* Styling for the number display area */
 .number {
-  background: #eee;
-  color: #333;
-  font-size: 6rem;
+  background: #eee; /* Background color */
+  color: #333; /* Text color */
+  font-size: 6rem; /* Font size */
   width: 15rem;
   padding: 3rem 0rem;
   text-align: center;
@@ -69,6 +80,7 @@ h1 {
   transform: translate(-50%, 50%);
 }
 
+/* Styling for the range indicator */
 .between {
   font-size: 1.4rem;
   position: absolute;
@@ -76,18 +88,20 @@ h1 {
   right: 2rem;
 }
 
+/* Styling for the "Again!" button */
 .again {
   position: absolute;
   top: 2rem;
   left: 2rem;
 }
 
+/* Styling for the guess input field */
 .guess {
   background: none;
-  border: 4px solid #eee;
+  border: 4px solid #eee; /* Border style */
   font-family: inherit;
   color: inherit;
-  font-size: 5rem;
+  font-size: 5rem; /* Font size */
   padding: 2.5rem;
   width: 25rem;
   text-align: center;
@@ -95,53 +109,59 @@ h1 {
   margin-bottom: 3rem;
 }
 
+/* Styling for buttons */
 .btn {
   border: none;
-  background-color: #eee;
-  color: #222;
-  font-size: 2rem;
+  background-color: #eee; /* Background color */
+  color: #222; /* Text color */
+  font-size: 2rem; /* Font size */
   font-family: inherit;
   padding: 2rem 3rem;
   cursor: pointer;
 }
 
+/* Styling for the settings button */
 .setting {
   border: none;
-  background-color: #222;
+  background-color: #222; /* Background color */
   position: relative;
-  top: 10px; 
-  left: 1370px;
+  top: 10px; /* Adjust position */
+  left: 1370px; /* Adjust position */
   cursor: pointer;
 }
 
+/* Hover effect for buttons */
 .btn:hover {
-  background-color: #ccc;
+  background-color: #ccc; /* Background color on hover */
 }
 
+/* Styling for game messages */
 .message {
-  margin-bottom: 8rem;
-  height: 3rem;
+  margin-bottom: 8rem; /* Margin at the bottom */
+  height: 3rem; /* Height of the message area */
 }
 
+/* Styling for the score label */
 .label-score {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; /* Margin at the bottom */
 }
 
-/* Modal content */
+/* Modal content styling */
 .modal-content {
   display: none;
   position: fixed;
-  top: 50%; /* Center vertically at 50% from the top of the viewport */
-  left: 50%; /* Center horizontally at 50% from the left of the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
   transform: translate(-50%, -50%); /* Center the modal content */
-  background-color: #fff;
+  background-color: #fff; /* Background color */
   padding: 20px;
-  width: 20%;
-  height: 35%;
+  width: 20%; /* Width of the modal */
+  height: 35%; /* Height of the modal */
   z-index: 1000; /* Ensure it's on top of everything */
-  border-radius: 5px;
+  border-radius: 5px; /* Rounded corners */
 }
 
+/* Overlay styling for the modal background */
 .overlay {
   display: none;
   position: absolute;
@@ -149,89 +169,15 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  backdrop-filter: blur(3px); /* Apply a blur effect to the background */
   z-index: 5;
 }
 
-/* Close button (×) */
+/* Close button (×) styling */
 .close {
   float: right;
   font-size: 28px;
   font-weight: bold;
-  cursor: pointer;
-}
-
-.modal-header{
-  color: #222;
-}
-
-.modal-body{
-  color: #222;
-  padding: 20px;
-}
-
-.save {
-  position: fixed;
-  margin: 10px 10px; /* Adjust the top margin to move it down */
-  background-color: #222;
-  color: #fff;
-  width: 20%; /* Make it smaller in width */
-  height: 3%; /* Make it smaller in height */
-  font-size: 14px; /* Adjust the font size to make "Save" smaller */
-  display: flex; /* Use flexbox */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-}
-.messageSetting{
-  position: fixed;
-  top: 100px;
-  left: 250px;
-}
-
-
-/* Apply a black and white pixel art style */
-.changeSetting {
-  display: block;
-  margin-bottom: 10px;
-  background-color: #fff; /* White background */
-  color: #000; /* Black text color */
-  border: 1px solid #000; /* Black 1px border */
-  padding: 4px; /* Adjust the padding to control the size */
-  margin: 5px;
-  outline: none; /* Remove the default focus outline */
-  font-family: 'Pixel', sans-serif; /* Use a pixel art font */
-  border-radius: 5px;
-}
-
-/* Hover effect - Change font color to white */
-.changeSetting:hover {
-  background-color: #000; /* Black background on hover */
-  color: #fff; /* White text color on hover */
-}
-.changeSetting::placeholder {
-  color: #000; /* Default placeholder text color */
-}
-
-/* Change placeholder text color on hover */
-.changeSetting:hover::placeholder {
-  color: #fff; /* White placeholder text color on hover */
-}
-/* Focus effect */
-.changeSetting:focus {
-  box-shadow: 0 0 5px #000; /* Black box shadow on focus */
-}
-
-/* Style for placeholder text */
-.changeSetting::placeholder {
-  color: #000; /* Black placeholder text color */
-  opacity: 1; /* Full opacity for placeholder text */
-}
-
-/* Pixel art font */
-@font-face {
-  font-family: 'Pixel';
-  src: url('https://fonts.gstatic.com/s/pixel/v10/6NUR8FifJg6gt8FcANcN.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+  cursor: pointer
 }
