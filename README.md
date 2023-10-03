@@ -4,8 +4,8 @@ While engaged in an advanced JavaScript course on Udemy, I dedicated my free tim
 
 ## My addition to the game
 
-    ### 'Settings' button
-    Within this module, players can tailor their gaming experience by customizing the range of numbers and the number of attempts.This feature also incorporates intuitive keyboard interactions, intelligent logic to choose either the range or the number of attempts independently, and seamless data reset functionality upon reopening. It serves as a testament to my commitment to elevating the user experience while mastering the intricacies of JavaScript programming.
+### 'Settings' button
+Within this module, players can tailor their gaming experience by customizing the range of numbers and the number of attempts.This feature also incorporates intuitive keyboard interactions, intelligent logic to choose either the range or the number of attempts independently, and seamless data reset functionality upon reopening. It serves as a testament to my commitment to elevating the user experience while mastering the intricacies of JavaScript programming.
 
 # Guess My Number Game
 
