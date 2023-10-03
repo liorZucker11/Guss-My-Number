@@ -1,6 +1,16 @@
+# My process
+
+While engaged in an advanced JavaScript course on Udemy, I dedicated my free time to deepen my understanding of programming methodologies. During this journey, I recognized a unique opportunity within the course project, which allowed me to demonstrate creativity and enhance my coding prowess.
+
+## My addition to the game
+
+    ### 'Settings' button
+    Within this module, players can tailor their gaming experience by customizing the range of numbers and the number of attempts.This feature also incorporates intuitive keyboard interactions, intelligent logic to choose either the range or the number of attempts independently, and seamless data reset functionality upon reopening. It serves as a testament to my commitment to elevating the user experience while mastering the intricacies of JavaScript programming.
+
 # Guess My Number Game
 
 Welcome to the "Guess My Number" game! This is a simple number guessing game where you try to guess the correct number within a specified range.
+
 
 ## How to Play
 
@@ -22,4 +32,5 @@ Welcome to the "Guess My Number" game! This is a simple number guessing game whe
 - HTML
 - CSS
 - JavaScript
+- VS Code
 
